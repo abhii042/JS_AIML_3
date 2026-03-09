@@ -53,6 +53,26 @@
         myinfo.age=18;
         myinfo.isMarried=false;
         myinfo.city="Ghaziabad";
+
+        console.log(myinfo['age']);
+
+        let studentList=[
+            "Vikas", "Abhi", "Rohit", "Satyarth"
+        ];
+
+        for(let i=0; i<studentList.length; i++){
+            console.log(studentList[i]);
+        }
+
+        //using for .. in loop
+        for(let x in studentList){
+            console.log(studentList[x]);
+        }
+
+        //using for .. of loop .. iterates over the values of interable objects
+        for(let y of studentList){
+            console.log(y);
+        }
     </script> 
 </body>
 </html>
