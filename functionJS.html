@@ -41,9 +41,32 @@
             console.log("this is an IIFE function");
         })
         // iife function using arrow function
-        (()=>console.log("this is an IIFE function using arrow function"))();
+        // (()=>console.log("this is an IIFE function using arrow function"))();
         
-        
+                   function mul(callback) {
+                var num1 = 5;
+                console.log("first number is " + num1);
+                var num2 = 10;
+                console.log("second number is " + num2);
+                var result = num1 * num2;
+                callback(result);
+
+            }
+            function result(result) {
+                console.log("The result is: " + result);
+            }
+            mul(result);
+            
+            //callback function using setTimeout API
+            function msg2() {
+                console.log("Hello after 3 seconds");
+                document.writeln("Hello");
+            }
+            function loading(){
+                document.writeln("Loading...");
+            };
+            setTimeout(msg2, 3000);
+            loading()
     </script>
 </body>
 </html>
