@@ -28,6 +28,22 @@
             console.log("this is a message");
         }
         msg1();
+        // arrow function using multiline
+
+        let add=(a,b)=>{
+            console.log("first number is " + a);
+            console.log("second number is " + b);
+            console.log("the sum is " + (a+b));
+        }
+        add(4,5);
+
+        (function(){
+            console.log("this is an IIFE function");
+        })
+        // iife function using arrow function
+        (()=>console.log("this is an IIFE function using arrow function"))();
+        
+        
     </script>
 </body>
 </html>
